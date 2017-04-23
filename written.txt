@@ -1,0 +1,73 @@
+Recursion
+
+    In your own words, what is recursion?
+        A recursive function is a functionthat calls on itself within its own function definition. It can often be replaced with a while loop, but sometimes recursion fits better with how you think about the problem
+    Why is it necessary to have a base case?
+        The base case ends the recursion, preventing an infinite loop that would break the program
+
+Graphs
+
+    What is a graph?
+        A graph is a collection of nodes that can be connected by edges (also sometimes called arcs)
+    How is a graph different from a tree?
+        A tree is a kind of graph. A node in a graph can have edges to any other nodes, whereas a node in a tree usually only has edges to its children (unless it's bidirectional or reversed).
+    Give an example of something that would be good to model with a graph.
+        Friendships and degrees of separation in a social network
+
+
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+------------------------------|--------|-------|-------|-------|-------|--------
+Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+------------------------------|--------|-------|-------|-------|-------|--------
+Linked List                    O(n)     O(n)    O(1)    O(1)    O(1)    O(1)
+                                                        or O(n)|or O(n)
+                                                       w/o tail|w/o tail
+------------------------------|--------|-------|-------|-------|-------|--------
+Doubly-Linked List             O(n)     O(n)    O(1)    O(1)    O(1)    O(n)         
+------------------------------|--------|-------|-------|-------|-------|--------
+Queue (as Array)                X       X       O(1)    X       O(n)    X
+------------------------------|--------|-------|-------|-------|-------|--------
+Queue (as LL or DLL)            X       X       O(1)    X       O(1)    X
+------------------------------|--------|-------|-------|-------|-------|--------
+Stack (as Array, LL, or DLL)    X       X       O(1)    X       X       O(1)
+------------------------------|--------|-------|-------|-------|-------|--------
+Deque (as DLL)                  X       X       O(1)    O(1)    O(1)    O(1)           
+
+
+
+
+
+Data Structure          Get       Add       Delete  Iterate Memory
+-----------------------|---------|---------|---------|---------|---------|
+Dictionary (Hash Map)   O(1)      O(1)      O(1)      O(n)      medium
+-----------------------|---------|---------|---------|---------|---------|
+Set (Hash Map)          O(1)      O(1)      O(1)      O(n)      medium         
+-----------------------|---------|---------|---------|---------|---------|
+Binary Search Tree      O(log n)  O(log n)  O(log n)  O(n)      a little             
+-----------------------|---------|---------|---------|---------|---------|
+tree                    O(n)      O(n)      O(n)      O(n)      a little
+
+
+Sorting
+
+    Describe in words how the Bubble Sort algorithm works.
+        starting at the left and moving right, each item is compared to the item to its right and those to items are switched if needed. This happens until no more switches need to be made or the list has been traversed once for each element in the list.
+    Describe in words how the Merge Sort algorithm works.
+        the list is split in half, and each half is haved untill there is a bunch of lists of 1 item each. these lists are grouped in pairs and each pair is ordered and merged into lists of 2 items each. Then the first item in the first list of two is compared to the first item in the second list of two, and whichever comes first is removed and added to a new list, and the item after the removed item gets compare to the first item in the other list, and so on.
+    Describe in words how the Quick Sort algorithm works.
+        A pivot is selected and the rest of the items are grouped by less than, equal to or greater than that pivot. pivots are selected in the less than and greater than lists and so on until the list sizes have reduced to 1 item each, at which point everyhting is merged back up into one fully sorted list.
+
+
+
+
+
+
+
+
+
+
+
+
